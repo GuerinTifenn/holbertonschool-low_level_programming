@@ -2,9 +2,7 @@
 
 /**
  * main - Entry point
- * 
  * puts: put a string on standard output
- * 
  * Return: Always 0 (Success)
  */
 
