@@ -1,8 +1,11 @@
 # include <stdio.h>
 
 /**
- * main - the entry point of the program 
- * return: always 0
+ * main - Entry point
+ * 
+ * puts: put a string on standard output
+ * 
+ * Return: Always 0 (Success)
  */
 
 int main(void)
