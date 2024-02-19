@@ -1,7 +1,8 @@
 # include <stdio.h>
 
 /**
- * main - the entry point of the program and return 0
+ * main - the entry point of the program 
+ * return always 0
  */
 
 int main(void)
