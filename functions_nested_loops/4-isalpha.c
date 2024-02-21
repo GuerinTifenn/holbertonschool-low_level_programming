@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _islower - check the code.
+ * _isalpha - check the code.
  * @c: caracter
  * Return: Always 0.
  */
