@@ -1,13 +1,18 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-void print_alphabet(void);
-	char i;
+  * main - Entry point
+  *
+  * Return: Always 0 (Success)
+  */
+void print_alphabet(void)
+{
+	char i = 'a';
 
-	for (i = 'a'; i <= 'z'; i++)
-		_putchar(i);
+	while (i <= 'z')
+	{
+	_putchar(i);
+	i++;
+	}
 	_putchar('\n');
+}
