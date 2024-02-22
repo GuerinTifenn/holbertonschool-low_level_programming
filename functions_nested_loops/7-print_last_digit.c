@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * print_last_digit - check the code
+ * print_last_digit - print last digit
  *@n: caracter
- * Return: Always 0.
+ * Return: value x.
  */
 
 int print_last_digit(int n)
@@ -13,7 +13,7 @@ int print_last_digit(int n)
 
 	if (x < 0)
 	{
-		x *= -1;
+		x = x * -1;
 	}
 	return (x);
 }
