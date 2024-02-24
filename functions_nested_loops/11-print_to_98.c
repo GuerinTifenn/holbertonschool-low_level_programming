@@ -1,31 +1,36 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
- * print_to_98 - prints all natural numbers from n to 98
- *@n: natural numbers
- * Return: Always 0 (Success)
+ * print_to_98 - prints all natural numbers to 98
+ * @n: number to choose
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-
 void print_to_98(int n)
 {
-	for (n = 0; n <= 98; n++)
+	if (n <= 98)
 	{
-		printf("%d", n);
-		if (n < 98)
+		for (; n <= 98; n++)
 		{
-			_putchar (',');
-			_putchar (' ');
+			printf("%d", n);
+			if (n < 98)
+			{
+				_putchar (',');
+				_putchar (' ');
+			}
 		}
 	}
-
-	for (n = 0; n >= 98; n--)
+	else
 	{
-		printf("%d", n);
-		if (n > 98)
+		for (; n >= 0; n--)
 		{
-			_putchar (',');
-			_putchar (' ');
+			printf("%d", n);
+			if (n > 0)
+			{
+				_putchar (',');
+				_putchar (' ');
+			}
 		}
 	}
 	_putchar ('\n');
