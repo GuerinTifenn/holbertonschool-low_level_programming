@@ -1,19 +1,20 @@
 #include "main.h"
 #include <stdio.h>
-#include <ctype.h>
 
 /**
- * print_line - checks for uppercase character.
+ * print_line - draws a straight line
  * @n: character to check
  * Return: Always 0.
  */
 
 void print_line(int n)
 {
+	int i;
 
 	if (n > 0)
 	{
-		_putchar('_' * n);
+		for (i = 0; i < n; i++)
+		_putchar('_');
 		_putchar('\n');
 	}
 	else
