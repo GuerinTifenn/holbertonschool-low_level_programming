@@ -11,7 +11,7 @@
 void _puts(char *str)
 {
 	int i = 0;
-	int j = strlen(str) - 1;
+	int j = _ strlen(str) - 1;
 
 	while (i <= j)
 	{
