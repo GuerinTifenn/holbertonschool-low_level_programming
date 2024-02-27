@@ -3,21 +3,20 @@
 #include "main.h"
 
 /**
-  * _puts - prints a string
-  * @str: a pointer to a char
+  * print_rev - prints a string in reverse
+  * @s: a pointer to a char
   * Return: Always 0 (Success)
   */
 
-void _puts(char *str)
+void print_rev(char *s)
 {
-	int i = 0;
-	int j = _strlen(str) - 1;
+	int i = strlen(s) - 1;
 
-	while (i <= j)
+	for (; i >= 0; i--)
 	{
-		putchar(str[j]);
-		j--;
+		putchar(s[i]);
 	}
 
 	putchar('\n');
+	return 0;
 }
