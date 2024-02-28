@@ -6,6 +6,7 @@
  *
  * Return: the int converted from the string
  */
+
 int _atoi(char *s)
 {
 	int i, d, n, digit;
@@ -14,11 +15,13 @@ int _atoi(char *s)
 	d = 0;
 	n = 0;
 
-	while (s[i] != '\0') {
+	while (s[i] != '\0')
+	{
 		if (s[i] == '-')
 			d++;
 
-		if (s[i] >= '0' && s[i] <= '9') {
+		if (s[i] >= '0' && s[i] <= '9')
+		{
 			digit = s[i] - '0';
 			if (d % 2)
 				digit = -digit;
@@ -34,5 +37,5 @@ int _atoi(char *s)
 	if (d % 2)
 		n = -n;
 
-	return n;
+	return (n);
 }
