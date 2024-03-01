@@ -15,7 +15,7 @@ char *cap_string(char *s)
 		'!', '?', '"', '(', ')', '{', '}'};
 
 	for (j = 0; spe[j] != '\0'; j++)
-		
+
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] >= 'a' && s[i] <= 'z' && s[i - 1] == spe[j])
