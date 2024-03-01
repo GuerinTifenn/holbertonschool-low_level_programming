@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-  * *_strcpy - copies the string pointed
+  * *_strncpy - copies the string pointed
   * @dest: buffer pointed
   * @src: string pointed
   * @n: bytes limit
