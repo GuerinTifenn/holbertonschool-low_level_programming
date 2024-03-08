@@ -16,7 +16,7 @@ int _prime(int i, int j)
 		return (1);
 	if (!(i % j))
 		return (0);
-	return (prime_finder(i, j + 1));
+	return (_prime(i, j + 1));
 }
 /**
  * is_prime_number - returns a number prime
