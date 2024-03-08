@@ -10,7 +10,7 @@
  * Return: Always 0 (Success)
  */
 
-int prime_finder(int i, int j)
+int _prime(int i, int j)
 {
 	if (i == j)
 		return (1);
@@ -29,5 +29,5 @@ int is_prime_number(int n)
 {
 	if (n < 2)
 		return (0);
-	return (prime_finder(n, 2));
+	return (_prime(n, 2));
 }
