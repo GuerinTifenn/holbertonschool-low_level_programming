@@ -2,7 +2,7 @@
 #include "3-calc.h"
 
 /**
-  * get_op_func - 
+  * get_op_func - Selects the correct function to perform the operation asked
   * @s: pointer to string
   * Return: result of the operation
   */
