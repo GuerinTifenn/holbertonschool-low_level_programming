@@ -1,6 +1,13 @@
+#include <stdio.h>
 #include "3-calc.h"
 
-int (*get_op_func(char *s))(int, int)
+/**
+  * get_op_func - 
+  * @s: pointer to string
+  * Return: result of the operation
+  */
+
+int (*get_op_func(char *s))(int a, int b)
 {
 	op_t ops[] = {
 		{"+", op_add},
@@ -10,13 +17,15 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-}
-int i = 0;
+	int i = 0;
 
 	while (ops[i].op != NULL)
 	{
-	return (ops[i].f);
-	i++;
+		if (*ops[i].op == *s)
+		{
+			return (ops[i].f);
+		}
+		i++;
 	}
-    return NULL;
+	return (NULL);
 }
