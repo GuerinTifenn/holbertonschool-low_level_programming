@@ -57,7 +57,7 @@ void print_string(va_list args)
 void print_all(const char * const format, ...)
 {
 	unsigned int i, j = 0;
-	char *separator;
+	char *separator = "";
 	va_list argp;
 
 	fs_t types[] = {
@@ -66,8 +66,6 @@ void print_all(const char * const format, ...)
 		{"f", print_float},
 		{"s", print_string}
 	};
-
-	separator = "";
 
 	va_start(argp, format);
 
