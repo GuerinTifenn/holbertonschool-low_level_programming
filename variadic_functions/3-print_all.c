@@ -58,7 +58,7 @@ void print_all(const char * const format, ...)
 {
 	unsigned int i, j = 0;
 	char *separator = "";
-	va_list argp;
+	va_list args;
 
 	fs_t types[] = {
 		{"c", print_char},
@@ -67,7 +67,7 @@ void print_all(const char * const format, ...)
 		{"s", print_string}
 	};
 
-	va_start(argp, format);
+	va_start(args, format);
 
 	while (format && format[i])
 	{
@@ -77,7 +77,7 @@ void print_all(const char * const format, ...)
 			if (format[i] == *types[j].spec)
 			{
 				printf("%s", separator);
-				types[j].print(argp);
+				types[j].print(args);
 				separator = ", ";
 			}
 			j++;
