@@ -54,42 +54,37 @@ void print_string(va_list args)
  * @format: a list of types of arguments passed to the function
  */
 
-void print_all(const char *format, ...)
+void print_all(const char * const format, ...)
 {
-	va_list args;
-	int i = 0;
-	int j = 0;
-	char *separator = "";
+	unsigned int i, j = 0;
+	char *separator;
+	va_list argp;
 
 	fs_t types[] = {
-		{'c', print_char},
-		{'d', print_int},
-		{'f', print_float},
-		{'s', print_string},
-		{NULL, NULL},
+		{"c", print_char},
+		{"i", print_int},
+		{"f", print_float},
+		{"s", print_string}
 	};
 
-	if (format == NULL)
-		return;
+	separator = "";
 
-	va_start(args, format);
+	va_start(argp, format);
 
-	while (format[i] != '\0')
+	while (format && format[i])
 	{
-
-		while (*types[j].spec)
+		j = 0;
+		while (j < 4)
 		{
-			if (*types[j].spec == format[i])
+			if (format[i] == *types[j].spec)
 			{
 				printf("%s", separator);
-				types[j].print(args);
+				types[j].print(argp);
 				separator = ", ";
-				break;
 			}
 			j++;
 		}
 		i++;
 	}
 	printf("\n");
-	va_end(args);
 }
