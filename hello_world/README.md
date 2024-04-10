@@ -1,6 +1,6 @@
 # hello world
 
-##Resources
+## Resources
 
 man or help:
 
@@ -29,7 +29,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - How to find the right header to include in your source code when using a standard library function
 - How does the main function influence the return value of the program
 
-##Requirements
+## Requirements
 
 ### C
 
@@ -89,7 +89,7 @@ done
 
 You can now type `betty <filename>` to run the Betty linter!
 
-###Manual QA Review
+### Manual QA Review
 
 It is your responsibility to request a review for your blog from a peer before the project’s deadline. If no peers have been reviewed, you should request a review from a TA or staff member.
 
